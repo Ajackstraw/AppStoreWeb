@@ -292,9 +292,14 @@
                 <?php
                     if($info['file']){
                         $i=1;
-                        foreach ($info['file'] as $val) {
+                        foreach(array_reverse($info['file']) as $val) {
                             $p=$path.'/'.$val;
                  ?>
+
+                 <!--   上面是逆向循环，此处是正向循环
+                        foreach ($info['file'] as $val) {
+                            $p=$path.'/'.$val;
+                  -->
 
                  <div class="col-lg-4 ">
 
